@@ -1,0 +1,13 @@
+{
+    "sortOrder": [
+        {
+            "columnIndex": 4,
+            "ascending": false
+        },
+        {
+            "columnIndex": 2,
+            "ascending": true
+        }
+    ],
+    "path": "D:/Google_Drive2/Personal/Exercise/R_in_production/SQL_ML_Services/iris_SQL/SQL_script"
+}

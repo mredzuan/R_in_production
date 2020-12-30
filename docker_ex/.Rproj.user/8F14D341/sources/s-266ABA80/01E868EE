@@ -1,0 +1,25 @@
+{
+    "id": "01E868EE",
+    "path": "D:/Google_Drive2/Personal/Exercise/R_in_production/docker_ex/myscript.R",
+    "project_path": "myscript.R",
+    "type": "r_source",
+    "hash": "2016039871",
+    "contents": "",
+    "dirty": false,
+    "created": 1608280682172.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "4,21",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1608280939,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1608280939,
+    "read_only": false,
+    "read_only_alternatives": []
+}

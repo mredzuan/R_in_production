@@ -1,0 +1,16 @@
+Debugging Shiny App
+
+1. runApp(display.mode = "showcase")
+
+2. options(shiny.reactlog = T)
+  runApp()
+  Enter:ctrl+F3
+  
+3. options(shiny.fullstacktrace = TRUE)
+
+
+
+4. browser()
+
+
+5. options(shiny.error = browser)

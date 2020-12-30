@@ -1,0 +1,24 @@
+{
+    "id": "8378BFC4",
+    "path": "D:/Google_Drive2/Personal/Exercise/R_in_production/SQL_ML_Services/iris_SQL/SQL_script/SQLQuery.sql",
+    "project_path": "SQL_script/SQLQuery.sql",
+    "type": "sql",
+    "hash": "1688924611",
+    "contents": "",
+    "dirty": false,
+    "created": 1608872348867.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "cursorPosition": "35,0",
+        "scrollLine": "20"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1608909376,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1608909376497,
+    "read_only": false,
+    "read_only_alternatives": []
+}

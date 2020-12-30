@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1606724092007.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1594452753",
+    "id" : "EE5FDCF9",
+    "lastKnownWriteTime" : 1606690457,
+    "last_content_update" : 1606690457,
+    "path" : "D:/GoogleDrive/Personal/Exercise/R_in_production/Shiny/Iris_shiny/R_script/Iris_SVM_model.R",
+    "project_path" : "R_script/Iris_SVM_model.R",
+    "properties" : {
+        "cursorPosition" : "65,0",
+        "scrollLine" : "42",
+        "source_window_id" : ""
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

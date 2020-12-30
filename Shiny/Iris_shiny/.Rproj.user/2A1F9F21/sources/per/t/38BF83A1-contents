@@ -1,0 +1,90 @@
+
+library(shiny)
+
+
+data_iris <- iris
+
+ui <- fluidPage(
+
+    # Application title
+    titlePanel("Iris Type Predictor"),
+
+    # Sidebar with a slider input for number of bins 
+    sidebarLayout(
+        sidebarPanel(
+            sliderInput("SepalLength",
+                        "Sepal Length:",
+                        min = 0,
+                        max = max(data_iris$Sepal.Length) + 1,
+                        value = 6.3),
+            
+            sliderInput("SepalWidth",
+                        "Sepal Width:",
+                        min = 0,
+                        max = max(data_iris$Sepal.Width) + 1,
+                        value = 3.4),
+            
+            sliderInput("PetalLength",
+                        "Petal Length:",
+                        min = 0,
+                        max = max(data_iris$Petal.Length) + 1,
+                        value = 5.6),
+            
+            sliderInput("PetalWidth",
+                        "Petal Width:",
+                        min = 0,
+                        max = max(data_iris$Petal.Width) + 1,
+                        value = 2.4),
+            
+            tags$br(),
+            
+            actionButton("runPredict",
+                         "Predict!")
+                
+            
+           
+        ),
+
+        # Show a plot of the generated distribution
+        mainPanel(
+            
+            imageOutput("iris_img"),
+            
+           plotOutput("distPlot")
+        )
+    )
+)
+
+
+
+
+
+
+# Define server logic required to draw a histogram
+server <- function(input, output) {
+    
+    
+    output$iris_img <- renderImage({
+        
+        return(list(
+            src = "../img/Versicolor.PNG",
+            contentType = "image/png",
+            alt = "Bunga"
+        ))
+        
+        
+    }, 
+    deleteFile = FALSE)
+
+    output$distPlot <- renderPlot({
+        
+        
+        pairs(iris[,1:4],col=iris[,5],oma=c(4,4,6,12))
+        par(xpd=TRUE)
+        legend(0.90,0.6, as.vector(unique(iris$Species)),fill=c(1,2,3,4))
+        
+    })
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)

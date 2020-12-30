@@ -1,0 +1,54 @@
+[1] "irisPrediction"
+# A tibble: 10 x 3
+   Id                        input_param                                                                     predict_result
+   <chr>                     <chr>                                                                           <chr>         
+ 1 16172-2020-12-25 11:48:54 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 2 1020-2020-12-25 11:54:35  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 3 9068-2020-12-25 11:54:55  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 4 4144-2020-12-25 11:55:33  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":4,\"Petal.Width\":1}]" versicolor    
+ 5 1568-2020-12-25 11:55:59  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":2,\"Petal.Width\":1}]" setosa        
+ 6 7512-2020-12-25 11:56:08  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":2,\"Petal.Width\":1}]" setosa        
+ 7 7512-2020-12-25 12:04:28  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":2,\"Petal.Width\":1}]" versicolor    
+ 8 13744-2020-12-25 12:05:02 "[{\"Sepal.Length\":2,\"Sepal.Width\":2,\"Petal.Length\":2,\"Petal.Width\":1}]" versicolor    
+ 9 10384-2020-12-25 12:05:31 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+10 15104-2020-12-25 12:09:03 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+# A tibble: 10 x 3
+   Id                        input_param                                                                     predict_result
+   <chr>                     <chr>                                                                           <chr>         
+ 1 16172-2020-12-25 11:48:54 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 2 1020-2020-12-25 11:54:35  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 3 9068-2020-12-25 11:54:55  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 4 4144-2020-12-25 11:55:33  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":4,\"Petal.Width\":1}]" versicolor    
+ 5 1568-2020-12-25 11:55:59  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":2,\"Petal.Width\":1}]" setosa        
+ 6 7512-2020-12-25 11:56:08  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":2,\"Petal.Width\":1}]" setosa        
+ 7 7512-2020-12-25 12:04:28  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":2,\"Petal.Width\":1}]" versicolor    
+ 8 13744-2020-12-25 12:05:02 "[{\"Sepal.Length\":2,\"Sepal.Width\":2,\"Petal.Length\":2,\"Petal.Width\":1}]" versicolor    
+ 9 10384-2020-12-25 12:05:31 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+10 15104-2020-12-25 12:09:03 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+# A tibble: 10 x 3
+   Id                        input_param                                                                     predict_result
+   <chr>                     <chr>                                                                           <chr>         
+ 1 16172-2020-12-25 11:48:54 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 2 1020-2020-12-25 11:54:35  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 3 9068-2020-12-25 11:54:55  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 4 4144-2020-12-25 11:55:33  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":4,\"Petal.Width\":1}]" versicolor    
+ 5 1568-2020-12-25 11:55:59  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":2,\"Petal.Width\":1}]" setosa        
+ 6 7512-2020-12-25 11:56:08  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":2,\"Petal.Width\":1}]" setosa        
+ 7 7512-2020-12-25 12:04:28  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":2,\"Petal.Width\":1}]" versicolor    
+ 8 13744-2020-12-25 12:05:02 "[{\"Sepal.Length\":2,\"Sepal.Width\":2,\"Petal.Length\":2,\"Petal.Width\":1}]" versicolor    
+ 9 10384-2020-12-25 12:05:31 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+10 15104-2020-12-25 12:09:03 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+[1] "irisPrediction"
+# A tibble: 10 x 3
+   Id                        input_param                                                                     predict_result
+   <chr>                     <chr>                                                                           <chr>         
+ 1 16172-2020-12-25 11:48:54 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 2 1020-2020-12-25 11:54:35  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 3 9068-2020-12-25 11:54:55  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+ 4 4144-2020-12-25 11:55:33  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":4,\"Petal.Width\":1}]" versicolor    
+ 5 1568-2020-12-25 11:55:59  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":2,\"Petal.Width\":1}]" setosa        
+ 6 7512-2020-12-25 11:56:08  "[{\"Sepal.Length\":1,\"Sepal.Width\":4,\"Petal.Length\":2,\"Petal.Width\":1}]" setosa        
+ 7 7512-2020-12-25 12:04:28  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":2,\"Petal.Width\":1}]" versicolor    
+ 8 13744-2020-12-25 12:05:02 "[{\"Sepal.Length\":2,\"Sepal.Width\":2,\"Petal.Length\":2,\"Petal.Width\":1}]" versicolor    
+ 9 10384-2020-12-25 12:05:31 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    
+10 15104-2020-12-25 12:09:03 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":3,\"Petal.Width\":1}]" versicolor    

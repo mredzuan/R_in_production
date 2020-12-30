@@ -1,0 +1,8 @@
+[1] "Inputted Arguments: "
+[1] "1" "1" "1" "1" "1" "1" "1" "1"
+                        Id
+1 3292-2020-11-27 01:49:36
+                                                            input_param
+1 [{"Sepal.Length":1,"Sepal.Width":1,"Petal.Length":1,"Petal.Width":1}]
+  predict_result
+1     versicolor

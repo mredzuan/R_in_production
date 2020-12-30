@@ -1,0 +1,152 @@
+## Connection string to DB via ODBC
+
+
+# Load library ------------------------
+library(DBI)
+library(odbc)
+library(dplyr)
+library(tidyverse)
+#library(RevoScaleR)
+library(caret)
+library(randomForest)
+library(e1071)
+
+
+
+
+#DB Connection--------------------
+#Connect DB via DBI
+
+SQL_con <- dbConnect(odbc::odbc(), 
+                     dsn = "sql_wR",
+                     driver = "SQL Server Native Client 11.0",
+                     database = "exercises",
+                     host = "local")
+
+
+#DBI::dbWriteTable(SQL_con, "Iris", iris)
+
+
+tbl(SQL_con, "Iris") %>% glimpse()
+
+
+#Connect DB via RevoscaleR
+
+#lenovo
+# SQL_con_RVSCL <- RxSqlServerData(connectionString = "Driver=SQL Server;Server=REDZWINDOW\\MSSQLWR;Database=exercises;Trusted_Connection={Yes}",
+#                                  sqlQuery = "select * from Iris" 
+#                                  )
+
+
+#Dell local host
+SQL_con_RVSCL <- RxSqlServerData(connectionString = "Driver=SQL Server;Server=DESKTOP-SKVB2GF;Database=exercises;Trusted_Connection={Yes}",
+                                 sqlQuery = "select * from Iris" 
+)
+
+rxGetVarInfo(SQL_con_RVSCL)
+rxSummary(~., SQL_con_RVSCL)
+
+sqlWait <- TRUE
+sqlConsoleOutput <- FALSE
+sqlShareDir <- paste("c:\\demos\\", Sys.getenv("USERNAME"), sep = "")
+sqlCompute <- RxInSqlServer(
+  connectionString = "Driver=SQL Server;Server=REDZWINDOW\\MSSQLWR;Database=exercises;Trusted_Connection={Yes}",
+  wait = sqlWait,
+  consoleOutput = sqlConsoleOutput)
+
+
+rxGetComputeContext()
+rxGetComputeContext(sqlCompute)
+
+
+
+
+#Modelling iris data---------------------
+
+
+
+#Dataset
+data_iris <- iris
+
+
+#Splitting dataset to traning and test set
+
+
+set.seed(123)
+
+train_index <- createDataPartition(data_iris$Species, p = 0.8, list = FALSE)
+
+train_dataset <- data_iris[train_index, ]
+test_dataset <- data_iris[-train_index, ]
+
+
+#Fit train dataset to RF algorithm
+
+
+classifier_RF <- randomForest(x = train_dataset[, -5],
+                              y = train_dataset$Species)
+
+
+#predict the test dataset
+
+predict_iris <- predict(classifier_RF, newdata = test_dataset[, -5])
+
+predicted_res_df <- cbind(test_dataset[, -5], data.frame(predict_iris))
+
+predict_iris2 <- data.frame(predict_iris = predict(classifier_RF, newdata = test_dataset[, -5]))
+#names(predict_iris2)[1] <- "predict_iris"
+
+
+#confusion matrix for test dataset
+confusionMatrix(predict_iris, test_dataset$Species)
+
+
+
+
+
+#Deploy the model into DB (Persist model)--------------------------
+
+modelBin <- serialize(classifier_RF, NULL)
+#modelBinStr <- paste(modelBin, collapse = "")
+modelBinStr <- data.frame(payload = as.raw(modelBin))
+
+#create as data frame to insert into iris_models database with id and value column
+
+model_data <- data.frame(id = 1, value = modelBinStr)
+
+DBI::dbWriteTable(SQL_con, "iris_models", model_data, append = TRUE)
+
+
+
+
+
+
+#save model
+
+#saveRDS(classifier_RF, "ML_model/iris_RF_Model.RDS")
+
+
+
+#function to predict new dataset
+
+
+predict_iris_fun <- function(sepal_length, sepal_width, petal_length, petal_width){
+  
+  stopifnot(is.numeric(sepal_length) & is.numeric(sepal_width) & is.numeric(petal_length) & is.numeric(petal_width))
+  
+  
+  new_data = data.frame(Sepal.Length = sepal_length, 
+                        Sepal.Width = sepal_width, 
+                        Petal.Length = petal_length, 
+                        Petal.Width = petal_width)
+  
+  iris_model <- readRDS(file = "ML_model/iris_RF_Model.RDS")
+  
+  predict_new_data <- predict(iris_model, newdata = new_data)
+  
+  
+  return(predict_new_data)
+  
+}
+
+

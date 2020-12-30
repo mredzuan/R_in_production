@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1607939496983.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "538E8A98",
+    "lastKnownWriteTime" : 4209018890537755765,
+    "last_content_update" : 1607939496983,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "23AFE985",
+        "caption" : "iris_models",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=&cache_key=23AFE985",
+        "displayedObservations" : 1,
+        "environment" : "_rs_no_env",
+        "expression" : "",
+        "object" : "",
+        "preview" : 1,
+        "totalObservations" : 1,
+        "variables" : 2
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

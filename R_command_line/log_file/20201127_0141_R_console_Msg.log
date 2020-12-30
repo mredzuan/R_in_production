@@ -1,0 +1,10 @@
+[1] "Inputted Arguments: "
+[1] "1" "2" "3" "4"
+                        Id
+1 4916-2020-11-27 01:41:21
+                                                            input_param
+1 [{"Sepal.Length":1,"Sepal.Width":2,"Petal.Length":3,"Petal.Width":4}]
+  predict_result
+1      virginica
+[1] "Inputted Arguments: "
+[1] "1" "2" "3"

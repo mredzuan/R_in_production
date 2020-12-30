@@ -1,0 +1,36 @@
+[1] "-----Run time:  2020-12-27 23:14:43  by:  15104  --------"
+[1] "Inputted Arguments: "
+[1] "2" "3" "4" "5" "6"
+                         Id
+1 15104-2020-12-27 23:14:47
+                                                            input_param
+1 [{"Sepal.Length":2,"Sepal.Width":3,"Petal.Length":4,"Petal.Width":5}]
+  predict_result
+1      virginica
+[1] "-----Run time:  2020-12-30 09:54:31  by:  9160  --------"
+[1] "Inputted Arguments: "
+[1] "2" "2" "2" "1"
+                        Id
+1 9160-2020-12-30 09:54:33
+                                                            input_param
+1 [{"Sepal.Length":2,"Sepal.Width":2,"Petal.Length":2,"Petal.Width":1}]
+  predict_result
+1     versicolor
+[1] "-----Run time:  2020-12-30 09:55:24  by:  6588  --------"
+[1] "Inputted Arguments: "
+[1] "1" "1" "1" "1"
+                        Id
+1 6588-2020-12-30 09:55:26
+                                                            input_param
+1 [{"Sepal.Length":1,"Sepal.Width":1,"Petal.Length":1,"Petal.Width":1}]
+  predict_result
+1     versicolor
+[1] "-----Run time:  2020-12-30 09:56:03  by:  11368  --------"
+[1] "Inputted Arguments: "
+[1] "4" "4" "4" "4"
+                         Id
+1 11368-2020-12-30 09:56:06
+                                                            input_param
+1 [{"Sepal.Length":4,"Sepal.Width":4,"Petal.Length":4,"Petal.Width":4}]
+  predict_result
+1      virginica

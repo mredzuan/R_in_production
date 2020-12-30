@@ -1,0 +1,125 @@
+################################################################################
+--Check external script status
+sp_configure
+
+
+################################################################################
+-- Enable extrenal script feature
+EXEC sp_configure  'external scripts enabled', 1
+RECONFIGURE WITH OVERRIDE
+
+
+
+###############################################################################
+-- Verify extenal script launching is running
+
+EXECUTE sp_configure  'external scripts enabled'
+
+-- Open the Services panel or SQL Server Configuration Manager, and verify SQL Server Launchpad 
+--service is running. You should have one service for every database engine instance that has R 
+--or Python installed.
+
+
+-- Verify sp execute sciript for R is working
+
+EXEC sp_execute_external_script  @language =N'R',
+@script=N'
+OutputDataSet <- InputDataSet;
+',
+@input_data_1 =N'SELECT 1 AS hello'
+WITH RESULT SETS (([hello] int not null));
+GO
+
+-- For python
+EXEC sp_execute_external_script  @language =N'Python',
+@script=N'
+OutputDataSet = InputDataSet;
+',
+@input_data_1 =N'SELECT 1 AS hello'
+WITH RESULT SETS (([hello] int not null));
+GO
+
+
+####################################################################
+Create SQL table to save persist model
+
+use exercises
+go
+
+drop table if exists serialize_models;
+go
+
+create table serialize_models (
+	[id] varchar(30) not null default ('new model') primary key,
+	[value] varbinary(max) not null
+
+);
+go
+
+
+
+
+#######################################################################
+-- Create store procedure to predict Iris type
+
+use exercises;
+go
+
+drop procedure if exists dbo.predict_iris;
+go
+
+
+create procedure dbo.predict_iris (@inquery nvarchar(max))
+as
+begin
+	declare @serialize_iris_model varbinary(max) = 
+	(select [value] from iris_models
+	where [id] = '1');
+
+execute sp_execute_external_script
+@language = N'R',
+@script = N'
+
+library(caret)
+library(randomForest)
+
+classifier_RF <- unserialize(serialize_iris_model)
+
+
+#predict the test dataset
+
+predict_iris <- predict(classifier_RF, newdata = InputDataSet)
+
+predicted_res_df <- cbind(InputDataSet, data.frame(predict_iris))
+',
+@input_data_1 = @inquery,
+	@params = N'@serialize_iris_model varbinary(max)',
+	@serialize_iris_model = @serialize_iris_model
+	with result sets ((
+						"Sepal.Length" float,
+						"Sepal.Width" float,
+						"Petal.Length" float,
+						"Petal.Width" float,
+						"predict_iris" varchar));
+end;
+go
+
+
+
+
+-- Execute prediction SP
+
+
+
+exec dbo.predict_iris
+@inquery = N'SELECT [Sepal.Length]
+      ,[Sepal.Width]
+      ,[Petal.Length]
+      ,[Petal.Width]
+      ,[Species]
+  FROM [exercises].[dbo].[Iris]
+					;'
+;
+GO
+
+

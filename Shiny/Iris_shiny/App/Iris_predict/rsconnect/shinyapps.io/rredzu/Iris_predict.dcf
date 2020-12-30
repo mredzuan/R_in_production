@@ -1,0 +1,13 @@
+name: Iris_predict
+title: Iris_predict
+username:
+account: rredzu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3361046
+bundleId: 3950772
+url: https://rredzu.shinyapps.io/Iris_predict/
+when: 1607270507.85592
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: debug_note

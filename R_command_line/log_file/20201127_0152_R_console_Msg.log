@@ -1,0 +1,8 @@
+[1] "Inputted Arguments: "
+[1] "2" "2" "2" "2"
+                         Id
+1 10208-2020-11-27 01:52:53
+                                                            input_param
+1 [{"Sepal.Length":2,"Sepal.Width":2,"Petal.Length":2,"Petal.Width":2}]
+  predict_result
+1         setosa

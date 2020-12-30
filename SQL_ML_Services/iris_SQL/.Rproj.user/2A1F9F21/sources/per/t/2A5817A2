@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1607931526440.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2A5817A2",
+    "lastKnownWriteTime" : 3472326097926496880,
+    "last_content_update" : 1607931526440,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "A680890",
+        "caption" : "modelBinStr",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=modelBinStr&cache_key=A680890",
+        "displayedObservations" : 405883,
+        "environment" : "",
+        "expression" : "modelBinStr",
+        "object" : "modelBinStr",
+        "preview" : 0,
+        "totalObservations" : 405883,
+        "variables" : 1
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

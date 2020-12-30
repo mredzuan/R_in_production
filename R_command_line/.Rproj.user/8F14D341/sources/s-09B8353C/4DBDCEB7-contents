@@ -1,0 +1,16 @@
+
+
+
+
+D:\Google_Drive2\Personal\Exercise\R_in_production\R_command_line>"C:\Program Files\R\R-3.6.0\bin\RScript.exe" .\R_script\Iris_predict_fun_cmd_Script.R 2 3 4 5 6
+
+
+--------command with log file (overwite previous record) ------
+D:\Google_Drive2\Personal\Exercise\R_in_production\R_command_line>"C:\Program Files\R\R-3.6.0\bin\RScript.exe" .\R_script\Iris_predict_fun_cmd_Script.R 2 3 4 5 6 > ./log_file/predict.log
+
+
+
+
+--------command line with log file (append the record from previous)------
+
+D:\Google_Drive2\Personal\Exercise\R_in_production\R_command_line>"C:\Program Files\R\R-3.6.0\bin\RScript.exe" .\R_script\Iris_predict_fun_cmd_Script.R 2 2 2 1 >> ./log_file/predict.log

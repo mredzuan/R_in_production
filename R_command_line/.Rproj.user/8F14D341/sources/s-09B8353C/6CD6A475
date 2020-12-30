@@ -1,0 +1,24 @@
+{
+    "id": "6CD6A475",
+    "path": "D:/Google_Drive2/Personal/Exercise/R_in_production/SQL_ML_Services/iris_SQL/R_Script/Iris.R",
+    "project_path": null,
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1609295011466.0,
+    "source_on_save": false,
+    "relative_order": 8,
+    "properties": {
+        "cursorPosition": "6,14",
+        "scrollLine": "15"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1608905465,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1608905465,
+    "read_only": false,
+    "read_only_alternatives": []
+}

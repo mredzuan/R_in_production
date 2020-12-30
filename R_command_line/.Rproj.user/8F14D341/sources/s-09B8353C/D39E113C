@@ -1,0 +1,24 @@
+{
+    "id": "D39E113C",
+    "path": "D:/Google_Drive2/Personal/Exercise/R_in_production/R_command_line/R_script/Iris_data_model.R",
+    "project_path": "R_script/Iris_data_model.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1609292899994.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "59,2",
+        "scrollLine": "47"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1606368940,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1609292984381,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,47 @@
+[1] "-----Run time:  2020-11-27 01:45:57  by:  6204  --------"
+[1] "-----Run time:  2020-11-27 01:46:31  by:  6204  --------"
+[1] "-----Run time:  2020-11-27 01:46:31  by:  6204  --------"
+[1] "-----Run time:  2020-11-27 01:47:48  by:  6204  --------"
+[1] "-----Run time:  2020-11-27 01:47:48  by:  6204  --------"
+[1] "irisPrediction"
+# A tibble: 10 x 3
+   Id                        input_param                                                                     predict_result
+   <chr>                     <chr>                                                                           <chr>         
+ 1 15404-2020-11-27 01:24:18 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 2 4580-2020-11-27 01:25:48  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 3 17080-2020-11-27 01:31:24 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 4 4308-2020-11-27 01:33:03  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 5 17612-2020-11-27 01:37:05 "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 6 15572-2020-11-27 01:39:55 "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 7 7152-2020-11-27 01:40:18  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 8 4916-2020-11-27 01:41:21  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 9 8308-2020-11-27 01:49:01  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+10 3292-2020-11-27 01:49:36  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+# A tibble: 10 x 3
+   Id                        input_param                                                                     predict_result
+   <chr>                     <chr>                                                                           <chr>         
+ 1 15404-2020-11-27 01:24:18 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 2 4580-2020-11-27 01:25:48  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 3 17080-2020-11-27 01:31:24 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 4 4308-2020-11-27 01:33:03  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 5 17612-2020-11-27 01:37:05 "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 6 15572-2020-11-27 01:39:55 "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 7 7152-2020-11-27 01:40:18  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 8 4916-2020-11-27 01:41:21  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 9 8308-2020-11-27 01:49:01  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+10 3292-2020-11-27 01:49:36  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+[1] "irisPrediction"
+[1] "irisPrediction"
+# A tibble: 10 x 3
+   Id                        input_param                                                                     predict_result
+   <chr>                     <chr>                                                                           <chr>         
+ 1 15404-2020-11-27 01:24:18 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 2 4580-2020-11-27 01:25:48  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 3 17080-2020-11-27 01:31:24 "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 4 4308-2020-11-27 01:33:03  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    
+ 5 17612-2020-11-27 01:37:05 "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 6 15572-2020-11-27 01:39:55 "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 7 7152-2020-11-27 01:40:18  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 8 4916-2020-11-27 01:41:21  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+ 9 8308-2020-11-27 01:49:01  "[{\"Sepal.Length\":1,\"Sepal.Width\":2,\"Petal.Length\":3,\"Petal.Width\":4}]" virginica     
+10 3292-2020-11-27 01:49:36  "[{\"Sepal.Length\":1,\"Sepal.Width\":1,\"Petal.Length\":1,\"Petal.Width\":1}]" versicolor    

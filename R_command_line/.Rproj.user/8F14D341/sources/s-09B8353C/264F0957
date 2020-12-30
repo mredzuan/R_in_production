@@ -1,0 +1,25 @@
+{
+    "id": "264F0957",
+    "path": "D:/Google_Drive2/Personal/Exercise/R_in_production/R_command_line/R_script/Iris_predict_fun_cmd_Script.R",
+    "project_path": "R_script/Iris_predict_fun_cmd_Script.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1609292910066.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "8,45",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1608868511,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1608868511,
+    "read_only": false,
+    "read_only_alternatives": []
+}

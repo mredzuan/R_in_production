@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1607929790118.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1967275760",
+    "id" : "5AC36A53",
+    "lastKnownWriteTime" : 1607931416,
+    "last_content_update" : 1607931416095,
+    "path" : "D:/GoogleDrive/Personal/Exercise/R_in_production/SQL_ML_Services/iris_SQL/SQL_script/SQL_script",
+    "project_path" : "SQL_script/SQL_script",
+    "properties" : {
+        "cursorPosition" : "106,0",
+        "scrollLine" : "88"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
